@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduford</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav class="navbar">
+            <a href="index.html"><img src="eduford_img/logo.png" alt="logo"></a>
+            <div class="links" id="links">
+                <i class="fa fa-times" onclick="hidemenu()" ></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="userRegistration.html">User Registration</a></li>
+                    <li><a href="userlogin.html">User Login</a></li>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>User Registration</h1>
+    </section>
+
+        <!-- ------- User Registration ------- -->
+
+        <section class="contact-us">
+            <div class="rows">
+                <div class="box">
+                    <div>
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5>Lorem ipsum dolor sit amet consectetur</h5>
+                            <p>Miraj,Maharashtra,India</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>+1 234857489302</h5>
+                            <p>Monday to Friday,9AM to 5.30PM</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope-o"></i>
+                        <span>
+                            <h5>walchandsangli.ac.in</h5>
+                            <p>Mail us for your query</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="box">
+
+                    <form action="form-handler.php" method="POST">
+                        <input type="text" id="" placeholder="Enter your User ID" required>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                        <input type="number" id="" placeholder="Enter your mobile number" required>
+                        <input type="text" id="" placeholder="Input your ID proof" required>
+                        <input type="email"  id="" placeholder="Enter your E-mail" required>
+                        <input type="text" na id="" placeholder="Enter your Address" required>
+                        <input type="text" id="" placeholder="Enter your Department" required>
+                        <input type="text" id="" placeholder="Enter your class" required>
+                        <input type="password" id="" placeholder="Enter Password" required>
+                        
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+        <!-- -------footer------- -->
+
+        <footer>
+            <h4>About Us</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi reiciendis exercitationem corporis sed nulla <br> deleniti minus officiis beatae placeat. Sit </p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-linkedin"></i>
+                <i class="fa fa-instagram"></i>
+            </div>
+            <p>Made with &nbsp;<i class="fa fa-heart-o"></i>&nbsp; by sayali</p>
+        </footer>
+
+        
+    <!-- javascript -->
+    <script>
+        let links=document.getElementById("links");
+        function showmenu(){
+            links.style.right="0";
+        }
+        function hidemenu(){
+            links.style.right="-200px";
+        }
+    </script>
+</body>
+
+</html>
